@@ -47,6 +47,7 @@ document.querySelectorAll('.color-choice').forEach(choice => {
   });
 });
 
+
 // Reveal content after disclaimer is accepted
 document.getElementById('accept-btn').addEventListener('click', function () {
   const mainContent = document.getElementById('main-content');
@@ -158,12 +159,14 @@ learnMoreBtn.addEventListener('click', () => {
       const dropDiv = document.createElement('div');
       dropDiv.className = 'drop-row';
       dropDiv.innerHTML = `
-        <div class="color-box" style="background-color: ${data.color};"></div>
-        <div class="drop-info">
-          <h3>${data.name}</h3>
-          <p><strong>Examples:</strong><br>${data.examples.join('<br>')}</p>
-          <p><strong>Mechanism:</strong> ${data.mechanism}</p>
-          <p><strong>Analogy:</strong> ${data.analogy}</p>
+        <div class="drop-box">
+          <div class="color-box" style="background-color: ${data.color};"></div>
+          <div class="drop-info">
+            <h3>${data.name}</h3>
+            <p><strong>Examples:</strong><br>${data.examples.join('<br>')}</p>
+            <p><strong>Mechanism:</strong> ${data.mechanism}</p>
+            <p><strong>Analogy:</strong> ${data.analogy}</p>
+          </div>
         </div>
       `;
       dropDetailsContainer.appendChild(dropDiv);
