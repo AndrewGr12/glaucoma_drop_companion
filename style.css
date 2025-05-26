@@ -241,11 +241,12 @@ body.menu-open {
 
 /*Author's photo*/
 .author-photo {
-  width:90%;
-  height: 90%;
-  max-width: 400px; /* or 500px, adjust as desired */
-  height: auto;
+  width: 100%;
+  max-width: 400px; /* cap the width */
+  height: auto; /* maintain natural aspect ratio */
+  max-height: 600px; /* optional cap for very tall images */
   border-radius: 8px;
+  object-fit: contain; /* ensures image fits without distortion */
 }
 
 .about-text {
@@ -366,13 +367,14 @@ body.menu-open {
     margin: 0 auto; /* center horizontally */
   }
 
-  .author-photo {
-    width: 90%;
-    max-width: 400px;
-    height: 90%;
-    margin: 0 auto; /* center horizontally */
-    max-height: 600px;
-  }
+.author-photo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  max-height: 600px;
+  object-fit: contain;
+}
 }
 
 
