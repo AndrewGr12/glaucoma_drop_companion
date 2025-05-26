@@ -9,6 +9,22 @@ function toggleDetails(tile) {
   details.classList.toggle('visible');
 }
 
+function lockScroll() {
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
+  document.body.style.top = `-${window.scrollY}px`;
+  document.body.dataset.scrollY = window.scrollY;
+}
+
+function unlockScroll() {
+  const scrollY = document.body.dataset.scrollY || '0';
+  document.body.style.position = '';
+  document.body.style.width = '';
+  document.body.style.top = '';
+  document.body.removeAttribute('data-scroll-y');
+  window.scrollTo(0, parseInt(scrollY));
+}
+
 // Hamburger menu toggle
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
@@ -17,8 +33,11 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   navLinks.classList.toggle('open');
 
-  // Optional: Disable scrolling when menu is open
-  document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : 'auto';
+  if (navLinks.classList.contains('open')) {
+    lockScroll();
+  } else {
+    unlockScroll();
+  }
 });
 
 document.querySelectorAll('.color-choice').forEach(choice => {

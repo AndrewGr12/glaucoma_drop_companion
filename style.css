@@ -166,11 +166,17 @@ header {
   transition: all 0.3s ease;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 /* Fullscreen menu styles */
 .nav-links {
   list-style: none; /* ✅ removes bullet points */
   position: fixed;
-  top: 50px;
+  top: 60px;
+  bottom: 0;
+  height: auto;
   right: 0;
   width: 100vw;
   height: calc(100vh - 60px);
