@@ -275,6 +275,10 @@ body.menu-open {
   margin-top: 60px;
 }
 
+.welcome p {
+  width: 100%;
+}
+
 .color-box {
   display: inline-block;
   width: 20px;
