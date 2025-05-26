@@ -277,6 +277,9 @@ body.menu-open {
 
 .welcome p {
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* optional, adds "..." if text is too long */
 }
 
 .color-box {
