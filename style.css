@@ -473,7 +473,6 @@ body.menu-open {
   opacity: 0;
   transition: opacity 0.5s ease;
   border-top: 2px solid #ccc; /* ← Horizontal line */
-  padding-top: 10px;
   padding-bottom: 10px;
 }
 
