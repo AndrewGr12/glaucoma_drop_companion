@@ -382,7 +382,7 @@ header {
   }  
 
   .author-photo {
-    max-height: 480px;
+    max-height: 400px;
     max-width: 320px;
   }
 }
