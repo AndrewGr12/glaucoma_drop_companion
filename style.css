@@ -232,6 +232,7 @@ header {
 /*Author's photo*/
 .author-photo {
   width:90%;
+  height: 90%;
   max-width: 400px; /* or 500px, adjust as desired */
   height: auto;
   border-radius: 8px;
@@ -350,7 +351,7 @@ header {
   .author-photo {
     width: 90%;
     max-width: 400px;
-    height: auto;
+    height: 90%;
     margin: 0 auto; /* center horizontally */
     max-height: 600px;
   }
@@ -381,11 +382,6 @@ header {
   font-size: clamp(16px, 1.5vw, 26px);
   margin-bottom: 25px;
   }  
-
-  .author-photo {
-    max-height: 600px;
-    max-width: 320px;
-  }
 }
 
 .accept-btn {
