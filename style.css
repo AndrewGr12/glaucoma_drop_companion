@@ -352,7 +352,7 @@ header {
     max-width: 400px;
     height: auto;
     margin: 0 auto; /* center horizontally */
-    max-height: 500px;
+    max-height: 600px;
   }
 }
 
@@ -383,7 +383,7 @@ header {
   }  
 
   .author-photo {
-    max-height: 400px;
+    max-height: 600px;
     max-width: 320px;
   }
 }
