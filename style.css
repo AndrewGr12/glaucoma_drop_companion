@@ -280,6 +280,7 @@ body.menu-open {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; /* optional, adds "..." if text is too long */
+  margin-top: -10px;
 }
 
 .color-box {
