@@ -4,6 +4,10 @@ html, body {
   padding: 0;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 main {
   padding-bottom: 40px; /* Enough space for footer height */
 }
