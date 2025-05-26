@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glaucoma Drop Guide</title>
+  <link rel="icon" href="images/drop_icon-modified.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2" />
+  <script src="main.js?v=2" defer></script>
+</head>
+<body>
+  <div class="center-wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Fullscreen nav for mobile -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="about.html">About the Author</a></li>
+        </ul>
+      </nav>
+
+        <!-- New desktop nav buttons -->
+        <div class="desktop-nav-links">
+          <a href="index.html" class="desktop-link">Home Page</a>
+          <a href="about.html" class="desktop-link active">About the Author</a>
+        </div>
+
+      <a href="index.html" class="header-right">
+        <span class="header-title">Glaucoma Drop Companion</span>
+        <img src="images/drop_icon_small.png" alt="Drop Buddy Icon" class="header-icon">
+      </a>
+    </header>
+    <main>
+  <section class="about-container">
+    <img class="author-photo fade-in-up" src="./images/Andrew_Gregory_M4_v2.jpg" alt="Author's Photo"/>
+    <div class="about-text">
+      <ul class="no-bullets">
+        <li class="fade-in-up">🧑‍⚕️ <b>Dr. Andrew Gregory, MD</b></li>
+        <li class="fade-in-up">🏅 <b>Top 5%</b> of medical school class</li>
+        <li class="fade-in-up">📚 Published <b>12+ scientific articles</b></li>
+        <li class="fade-in-up">🗣️ Presented at <b>20+ national & global conferences</b></li>
+        <li class="fade-in-up">💻 Passionate about <b>data science</b></li>
+        <li class="fade-in-up">📄 <b><a href="https://drive.google.com/file/d/1BWxLH5nhjxlYAtMKXmRvBKjZdqtBhsU1/view?usp=sharing" target="_blank">Curriculum Vitae</a></b></li>
+        <li class="fade-in-up">🔗 <b><a href="https://www.linkedin.com/in/andrewgregory2/" target="_blank">LinkedIn</a></b></li>
+      </ul>
+    </div>
+  </section>
+
+  </main>
+    <footer class="footer">
+     <p>&copy; 2025 Glaucoma Drop Companion. All rights reserved. Not medical advice.</p>
+    </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const faders = document.querySelectorAll('.fade-in-up');
+
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach((entry, index) => {
+        if (!entry.isIntersecting) return;
+
+        const targets = entry.target.querySelectorAll('.fade-in-up');
+
+        targets.forEach((el, i) => {
+          setTimeout(() => {
+            el.classList.add('show');
+          }, i * 200); // 200ms delay between each
+        });
+
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    const containers = document.querySelectorAll('.about-container');
+    containers.forEach(container => {
+      appearOnScroll.observe(container);
+    });
+  });
+</script>
+
+</body>
+
+</html>

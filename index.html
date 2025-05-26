@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glaucoma Drop Guide</title>
+  <link rel="icon" href="images/drop_icon-modified.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2" />
+  <script src="main.js?v=2" defer></script>
+</head>
+<body>
+  <div class="center-wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Fullscreen nav for mobile -->
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="about.html">About the Author</a></li>
+        </ul>
+      </nav>
+
+        <!-- New desktop nav buttons -->
+      <div class="desktop-nav-links">
+        <a href="index.html" class="desktop-link active">Home Page</a>
+        <a href="about.html" class="desktop-link">About the Author</a>
+      </div>
+
+      <a href="index.html" class="header-right">
+        <span class="header-title">Glaucoma Drop Companion</span>
+        <img src="images/drop_icon_small.png" alt="Drop Buddy Icon" class="header-icon">
+      </a>
+    </header>
+
+    <main>
+      <!-- Welcome Section -->
+      <section class="welcome">
+        <h1 class = "fade-in-up">Welcome to the Glaucoma Drop Companion!</h1>
+        <p class = "fade-in-up">A quick guide to help you understand your glaucoma drops with fun analogies!</p>
+      </section>
+
+      <!-- Disclaimer (moved up) -->
+      <section class="disclaimer fade-in-up">
+        <h2>Disclaimer</h2>
+        <p>This website is for informational purposes only. Always consult a qualified healthcare provider with any questions you may have regarding a medical condition!</p>
+        <button id="accept-btn" class="accept-btn">Continue</button>
+      </section>
+      
+      <div id="main-content" style="display: none;">
+          <section class="selector">
+            <h2>Select Your Drop Cap Colors and click Learn More!</h2>
+            <form id="drop-form">
+              <div class="color-selectors">
+                <div class="color-wrapper">
+                  <div class="color-choice" data-color="yellow" style="background-color: #FFFF00;" title="Beta-blockers"></div>
+                  <p>Yellow</p>
+                </div>
+                <div class="color-wrapper">
+                  <div class="color-choice" data-color="teal" style="background-color: #40E0D0;" title="Prostaglandin Analogs"></div>
+                  <p>Teal</p>
+                </div>
+                <div class="color-wrapper">
+                  <div class="color-choice" data-color="purple" style="background-color: #800080;" title="Alpha Agonists"></div>
+                  <p>Purple</p>
+                </div>
+                <div class="color-wrapper">
+                  <div class="color-choice" data-color="orange" style="background-color: #FFA500;" title="Carbonic Anhydrase Inhibitors"></div>
+                  <p>Orange</p>
+                </div>
+                <div class="color-wrapper">
+                  <div class="color-choice" data-color="white" style="background-color: #FFFFFF;" title="ROCK Inhibitors & White Caps"></div>
+                  <p>White</p>
+                </div>
+                <div class="color-wrapper">
+                  <div class="color-choice" data-color="darkgreen" style="background-color: #008000;" title="Miotics"></div>
+                  <p>Dark <br> Green</p>
+                </div>
+                <div class="color-wrapper">
+                  <div class="color-choice" data-color="darkblue" style="background-color: #000080;" title="Combo Drops (e.g., Cosopt, Combigan)"></div>
+                  <p>Dark <br> Blue</p>
+                </div>
+              </div>
+              <button type="button" id="learn-more-btn" class = "fade-in-up">Learn More!</button>
+            </form>
+          </section>
+      </div>
+
+      <!-- Output Section -->
+      <section id="results" class="results">
+        <!-- JS will dynamically insert results here -->
+      </section>
+
+      <!-- Detailed Info Section -->
+      <section id="details-page" class="details-page" style="display: none;">
+        <button id="back-btn" class="back-btn">⬅ Back</button>
+        <div id="drop-details-container"></div>
+      </section>
+    </main>
+    <footer class="footer">
+     <p>&copy; 2025 Glaucoma Drop Companion. All rights reserved. Not medical advice.</p>
+    </footer>
+  </div>
+</body>
+</html>
