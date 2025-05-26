@@ -47,6 +47,23 @@ document.querySelectorAll('.color-choice').forEach(choice => {
   });
 });
 
+//
+document.getElementById('learn-more-btn').addEventListener('click', () => {
+  const selectedColors = Array.from(document.querySelectorAll('.color-choice.selected'))
+    .map(el => el.getAttribute('data-color'));
+  const mainContent = document.getElementById('main-content');
+  const detailsPage = document.getElementById('details-page');
+
+  // You can use selectedColors to drive your logic for showing the drop info.
+  console.log("Selected colors:", selectedColors);
+
+   // Hide main content
+  mainContent.classList.remove('visible');
+  mainContent.style.display = 'none';
+
+});
+
+
 // Reveal content after disclaimer is accepted
 document.getElementById('accept-btn').addEventListener('click', function () {
   const mainContent = document.getElementById('main-content');
