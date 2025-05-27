@@ -245,6 +245,7 @@ body.menu-open {
   max-width: 400px; /* or 500px, adjust as desired */
   height: auto;
   border-radius: 8px;
+  object-fit: cover; /* or use 'contain' depending on the effect you want */
 }
 
 .about-text {
@@ -365,13 +366,15 @@ body.menu-open {
     margin: 0 auto; /* center horizontally */
   }
 
-  .author-photo {
-    width: 90%;
-    max-width: 400px;
-    height: auto;
-    margin: 0 auto; /* center horizontally */
-    max-height: 600px;
-  }
+.author-photo {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  max-height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
 }
 
 
