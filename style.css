@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -8,18 +9,15 @@ html {
 }
 
 main {
-  flex: 1;
-  padding-bottom: 40px; /* enough space if you need breathing room */
+  padding-bottom: 40px; /* Enough space for footer height */
+  flex: 1; /* This makes the main content take up the remaining space */
 }
 
 body {
   font-family: 'Merriweather', serif;
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h1, h2, h3 {
@@ -139,9 +137,10 @@ header {
 }
 
 .center-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .details {
