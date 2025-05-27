@@ -8,11 +8,6 @@ html {
   overflow-y: scroll;
 }
 
-main {
-  padding-bottom: 40px; /* Enough space for footer height */
-  flex: 1; /* This makes the main content take up the remaining space */
-}
-
 body {
   font-family: 'Merriweather', serif;
   display: flex;
