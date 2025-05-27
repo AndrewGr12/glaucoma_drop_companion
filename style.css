@@ -242,7 +242,6 @@ body.menu-open {
 /*Author's photo*/
 .author-photo {
   width:90%;
-  height: 90%;
   max-width: 400px; /* or 500px, adjust as desired */
   height: auto;
   border-radius: 8px;
@@ -369,7 +368,7 @@ body.menu-open {
   .author-photo {
     width: 90%;
     max-width: 400px;
-    height: 90%;
+    height: auto;
     margin: 0 auto; /* center horizontally */
     max-height: 600px;
   }
