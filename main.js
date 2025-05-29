@@ -59,6 +59,7 @@ document.getElementById('accept-btn').addEventListener('click', function () {
   document.querySelector('.disclaimer').style.display = 'none';
 });
 
+/*
 const dropData = {
   yellow: {
     name: "Beta-blockers",
@@ -136,6 +137,94 @@ const dropData = {
       "Imagine a buddy-cop movie. One cop shuts off the water supply, the other either opens a secret drain tunnel or cuts off power to the pump! Working together, they bring the pressure down fast!"
   }
 };
+*/
+
+const dropData = {
+  yellow: {
+    name: "Beta-blockers",
+    color: "#FFFF00",
+    examples: [
+      "- Timolol (Timoptic, Istalol, Betimol)",
+      "- Levobunolol (Betagan)",
+      "- Carteolol (Ocupress)"
+    ],
+    howTheyWork: [
+    "Beta-blockers tell your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!"
+    ]
+  },
+  teal: {
+    name: "Prostaglandin Analogs",
+    color: "#40E0D0",
+    examples: [
+      "- Latanoprost (Xalatan, Xelpros)",
+      "- Travoprost (Travatan Z)",
+      "- Bimatoprost (Lumigan)",
+      "- Tafluprost (Zioptan)"
+    ],
+    howTheyWork: [
+    "Prostaglandin analogs help your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!"
+    ]
+  },
+  purple: {
+    name: "Alpha Agonists",
+    color: "#800080",
+    examples: [
+      "- Brimonidine (Alphagan P)",
+      "- Apraclonidine (Iopidine)"
+    ],
+    howTheyWork: [
+    "Alpha agonists do double duty - they slow down how much fluid your eye makes and also help open the drain, like a janitor fixing a leaky faucet and a clogged sink at once!"
+    ]
+  },
+  orange: {
+    name: "Carbonic Anhydrase Inhibitors (CAIs)",
+    color: "#FFA500",
+    examples: [
+      "- Dorzolamide (Trusopt)",
+      "- Brinzolamide (Azopt)"
+    ],
+    howTheyWork: [
+    "CAIs block an enzyme inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!"
+    ]
+  },
+  white: {
+    name: "ROCK Inhibitors or Combination Drops",
+    color: "#FFFFFF",
+    examples: [
+      "- Netarsudil (Rhopressa)",
+      "- Simbrinza (Brimonidine + Brinzolamide)",
+      "- Rocklatan (Netarsudil + Latanoprost)"
+    ],
+    howTheyWork: [
+      " Netarsudil (Rhopressa) relaxes the eye’s drainage pathway by softening the tissue, like loosening a stiff pipe so fluid can exit more easily!", 
+      "In Simbrinza, brimonidine has a double duty - it slow down how much fluid your eye makes and also help open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while brinzolamide block an enzyme inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!", 
+      "In Rocklatan, netarsudil relaxes the eye’s drainage pathway by softening the tissue, like loosening a stiff pipe so fluid can exit more easily, while latanoprost help your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!"
+    ]    
+    },
+  darkgreen: {
+    name: "Miotics",
+    color: "#008000",
+    examples: [
+      "- Pilocarpine"
+    ],
+    howTheyWork: [
+      "Miotics like Pilocarpine shrink your pupil and pull on parts of the eye to open the drain—like tugging on a stuck pipe so fluid can finally escape."
+    ]
+  },
+  darkblue: {
+    name: "Combination Drops",
+    color: "#000080",
+    examples: [
+      "- Combigan (Brimonidine + Timolol)",
+      "- Cosopt (Dorzolamide + Timolol)"
+    ],
+    howTheyWork: [
+      "In combigan, brimonidine has a double duty - it slow downs how much fluid your eye makes and also help open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while Timolol tell your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!",
+      "In cosopt, block an enzyme inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid, while Timolol tell your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!"
+    ] 
+  }
+};
+
 
 const learnMoreBtn = document.getElementById('learn-more-btn');
 const resultsSection = document.getElementById('results');
@@ -161,8 +250,7 @@ learnMoreBtn.addEventListener('click', () => {
           <div class="drop-info">
             <h3>${data.name}</h3>
             <p><strong>Examples:</strong><br>${data.examples.join('<br>')}</p>
-            <p><strong>Mechanism:</strong> ${data.mechanism}</p>
-            <p><strong>Analogy:</strong> ${data.analogy}</p>
+            <p><strong>How they work:</strong><br>${data.howTheyWork.join('<br>')}</p>
           </div>
         </div>
       `;
