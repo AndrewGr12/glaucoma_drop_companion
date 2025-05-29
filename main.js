@@ -131,7 +131,7 @@ const dropData = {
       "- Pilocarpine 1%, 2%, 4%, or 6%"
     ],
     howTheyWork: [
-      "Pilocarpine shrinks your pupil and pulls on parts of the eye to open the drain—like tugging on a stuck pipe so fluid can finally escape."
+      "Pilocarpine shrinks your pupil and pulls on parts of the eye to open the drain - like tugging on a stuck pipe so fluid can finally escape."
     ]
   },
   darkblue: {
