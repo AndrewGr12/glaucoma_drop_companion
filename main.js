@@ -47,7 +47,6 @@ document.querySelectorAll('.color-choice').forEach(choice => {
   });
 });
 
-
 // Reveal content after disclaimer is accepted
 document.getElementById('accept-btn').addEventListener('click', function () {
   const mainContent = document.getElementById('main-content');
