@@ -19,11 +19,6 @@ h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-main {
-  margin-bottom: 30vh;
-  flex: 1;
-}
-
 header {
   position: fixed;
   top: 0;
