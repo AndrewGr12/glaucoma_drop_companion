@@ -69,8 +69,8 @@ const dropData = {
       "- Levobunolol (Betagan)",
       "- Carteolol (Ocupress)"
     ],
-    mechanism: "Tell your eye to stop making so much fluid, which lowers the pressure inside.",
-    analogy: "Your eye is like a bathtub with the faucet on. Beta-blockers are like turning that faucet way down—now only a trickle comes in, so the tub doesn’t overflow."
+    mechanism: "Tells your eye to stop making so much fluid, which lowers the pressure inside!",
+    analogy: "Your eye is like a bathtub with the faucet on. Beta-blockers are like turning that faucet way down—now only a trickle comes in, so the tub doesn’t overflow!"
   },
   teal: {
     name: "Prostaglandin Analogs",
@@ -81,8 +81,8 @@ const dropData = {
       "- Bimatoprost (Lumigan)",
       "- Tafluprost (Zioptan)"
     ],
-    mechanism: "Help your eye drain fluid better, using an extra pathway.",
-    analogy: "Imagine your eye is a house during a rainstorm. These drops build wide new gutters so the rain (eye fluid) can drain faster—no flooding, no pressure!"
+    mechanism: "Helps your eye drain fluid better, using an extra pathway!",
+    analogy: "Imagine your eye is a house during a rainstorm. These drops build wide new gutters so the rain (eye fluid) can drain faster - no flooding, no pressure!"
   },
   purple: {
     name: "Alpha Agonists",
@@ -91,7 +91,7 @@ const dropData = {
       "- Brimonidine (Alphagan P)",
       "- Apraclonidine (Iopidine)"
     ],
-    mechanism: "Lower how much fluid your eye makes, and help it drain better too.",
+    mechanism: "Lowers how much fluid your eye makes, and helps it drain better too!",
     analogy: "Think of a janitor with two jobs: one hand turns off a leaky faucet (less fluid in), while the other opens the back door to let water out. Two fixes in one!"
   },
   orange: {
@@ -101,8 +101,8 @@ const dropData = {
       "- Dorzolamide (Trusopt)",
       "- Brinzolamide (Azopt)"
     ],
-    mechanism: "Slow down the eye’s fluid-making machine by blocking a key ingredient.",
-    analogy: "Imagine a soda machine running out of gas. No gas means no fizz—so less soda comes out. These drops cut the power to the machine, slowing everything down."
+    mechanism: "Slows down the eye’s fluid-making machine by blocking a key ingredient!",
+    analogy: "Imagine a soda machine running out of gas. No gas means no fizz - so less soda comes out! These drops cut the power to the machine, slowing everything down!"
   },
   white: {
     name: "ROCK Inhibitors / White Cap Drops",
@@ -112,8 +112,8 @@ const dropData = {
       "- Simbrinza (Brimonidine + Brinzolamide)",
       "- Rocklatan (Netarsudil + Latanoprost)"
     ],
-    mechanism: "Relax part of the eye’s drainage system so fluid can escape more easily.",
-    analogy: "Picture a traffic jam where nothing moves. ROCK inhibitors are like a traffic cop stepping in—suddenly, the cars start flowing and the jam clears up!"
+    mechanism: "Relaxes part of the eye’s drainage system so fluid can escape more easily!",
+    analogy: "Picture a traffic jam where nothing moves. ROCK inhibitors are like a traffic cop stepping in and suddenly, the cars start moving and the jam clears up!"
   },
   darkgreen: {
     name: "Miotics",
@@ -121,7 +121,7 @@ const dropData = {
     examples: [
       "- Pilocarpine"
     ],
-    mechanism: "Squeeze part of your eye open so fluid can drain better.",
+    mechanism: "Squeezes part of your eye open so fluid can drain better!",
     analogy: "It’s like pulling a string to pop open a stuck drain. Now the water can finally leave the sink, and the pressure goes down!"
   },
   darkblue: {
@@ -132,9 +132,9 @@ const dropData = {
       "- Cosopt (Dorzolamide + Timolol)"
     ],
     mechanism: 
-      "Use two medicines at once—one lowers how much fluid is made, the other helps drain or blocks fluid-making enzymes.",
+      "Uses two medicines at once—one lowers how much fluid is made, the other helps drain or blocks fluid-making enzymes.",
     analogy: 
-      "Imagine a buddy-cop movie. One cop shuts off the water supply, the other either opens a secret drain tunnel or cuts off power to the pump. Working together, they bring the pressure down fast."
+      "Imagine a buddy-cop movie. One cop shuts off the water supply, the other either opens a secret drain tunnel or cuts off power to the pump! Working together, they bring the pressure down fast!"
   }
 };
 
