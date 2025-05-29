@@ -59,86 +59,6 @@ document.getElementById('accept-btn').addEventListener('click', function () {
   document.querySelector('.disclaimer').style.display = 'none';
 });
 
-/*
-const dropData = {
-  yellow: {
-    name: "Beta-blockers",
-    color: "#FFFF00",
-    examples: [
-      "- Timolol (Timoptic, Istalol, Betimol)",
-      "- Levobunolol (Betagan)",
-      "- Carteolol (Ocupress)"
-    ],
-    mechanism: "Tells your eye to stop making so much fluid, which lowers the pressure inside!",
-    analogy: "Your eye is like a bathtub with the faucet on. Beta-blockers are like turning that faucet way down—now only a trickle comes in, so the tub doesn’t overflow!"
-  },
-  teal: {
-    name: "Prostaglandin Analogs",
-    color: "#40E0D0",
-    examples: [
-      "- Latanoprost (Xalatan, Xelpros)",
-      "- Travoprost (Travatan Z)",
-      "- Bimatoprost (Lumigan)",
-      "- Tafluprost (Zioptan)"
-    ],
-    mechanism: "Helps your eye drain fluid better, using an extra pathway!",
-    analogy: "Imagine your eye is a house during a rainstorm. These drops build wide new gutters so the rain (eye fluid) can drain faster - no flooding, no pressure!"
-  },
-  purple: {
-    name: "Alpha Agonists",
-    color: "#800080",
-    examples: [
-      "- Brimonidine (Alphagan P)",
-      "- Apraclonidine (Iopidine)"
-    ],
-    mechanism: "Lowers how much fluid your eye makes, and helps it drain better too!",
-    analogy: "Think of a janitor with two jobs: one hand turns off a leaky faucet (less fluid in), while the other opens the back door to let water out. Two fixes in one!"
-  },
-  orange: {
-    name: "Carbonic Anhydrase Inhibitors",
-    color: "#FFA500",
-    examples: [
-      "- Dorzolamide (Trusopt)",
-      "- Brinzolamide (Azopt)"
-    ],
-    mechanism: "Slows down the eye’s fluid-making machine by blocking a key ingredient!",
-    analogy: "Imagine a soda machine running out of gas. No gas means no fizz - so less soda comes out! These drops cut the power to the machine, slowing everything down!"
-  },
-  white: {
-    name: "ROCK Inhibitors or Combination Drops",
-    color: "#FFFFFF",
-    examples: [
-      "- Netarsudil (Rhopressa)",
-      "- Simbrinza (Brimonidine + Brinzolamide)",
-      "- Rocklatan (Netarsudil + Latanoprost)"
-    ],
-    mechanism: "Relaxes part of the eye’s drainage system so fluid can escape more easily!",
-    analogy: "Picture a traffic jam where nothing moves. ROCK inhibitors are like a traffic cop stepping in and suddenly, the cars start moving and the jam clears up!"
-  },
-  darkgreen: {
-    name: "Miotics",
-    color: "#008000",
-    examples: [
-      "- Pilocarpine"
-    ],
-    mechanism: "Squeezes part of your eye open so fluid can drain better!",
-    analogy: "It’s like pulling a string to pop open a stuck drain. Now the water can finally leave the sink, and the pressure goes down!"
-  },
-  darkblue: {
-    name: "Combination Drops",
-    color: "#000080",
-    examples: [
-      "- Combigan (Brimonidine + Timolol)",
-      "- Cosopt (Dorzolamide + Timolol)"
-    ],
-    mechanism: 
-      "Uses two medicines at once—one lowers how much fluid is made, the other helps drain or blocks fluid-making enzymes.",
-    analogy: 
-      "Imagine a buddy-cop movie. One cop shuts off the water supply, the other either opens a secret drain tunnel or cuts off power to the pump! Working together, they bring the pressure down fast!"
-  }
-};
-*/
-
 const dropData = {
   yellow: {
     name: "Beta-blockers",
@@ -224,7 +144,7 @@ const dropData = {
     howTheyWork: [
       "- In Combigan, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while Timolol tells your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!",
       "",
-      "In Cosopt, dorzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid, while Timolol tells your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!"
+      "- In Cosopt, dorzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid, while Timolol tells your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!"
     ] 
   }
 };
