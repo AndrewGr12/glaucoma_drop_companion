@@ -69,8 +69,8 @@ const dropData = {
       "- Levobunolol (Betagan)",
       "- Carteolol (Ocupress)"
     ],
-    mechanism: "Block beta-adrenergic receptors in the ciliary body to decrease aqueous humor production!",
-    analogy: "Turns the faucet way down in your eye’s plumbing! Less water gets made, so pressure drops! Or imagine your eye as a bathtub; beta-blockers twist the knob tighter so the water barely trickles in!"
+    mechanism: "Tell your eye to stop making so much fluid, which lowers the pressure inside.",
+    analogy: "Your eye is like a bathtub with the faucet on. Beta-blockers are like turning that faucet way down—now only a trickle comes in, so the tub doesn’t overflow."
   },
   teal: {
     name: "Prostaglandin Analogs",
@@ -81,8 +81,8 @@ const dropData = {
       "- Bimatoprost (Lumigan)",
       "- Tafluprost (Zioptan)"
     ],
-    mechanism: "Bind to prostaglandin receptors and increase uveoscleral outflow!",
-    analogy: "Adds extra-wide gutters around your house so rain drains faster and there is less overflow! Or think of a crowded exit in a concert hall - prostaglandins break open the side doors so everyone can exit quickly and smoothly!"
+    mechanism: "Help your eye drain fluid better, using an extra pathway.",
+    analogy: "Imagine your eye is a house during a rainstorm. These drops build wide new gutters so the rain (eye fluid) can drain faster—no flooding, no pressure!"
   },
   purple: {
     name: "Alpha Agonists",
@@ -91,8 +91,8 @@ const dropData = {
       "- Brimonidine (Alphagan P)",
       "- Apraclonidine (Iopidine)"
     ],
-    mechanism: "Activate alpha-2 adrenergic receptors to both decrease aqueous humor production and increase uveoscleral outflow!",
-    analogy: "Turning down the kitchen faucet while also opening a window to let steam out—less pressure coming in, and more ways for it to leave. Or picture a janitor with two jobs: one hand shuts off the leaky valve (less fluid made), while the other opens a back door to let water escape (more drainage)."
+    mechanism: "Lower how much fluid your eye makes, and help it drain better too.",
+    analogy: "Think of a janitor with two jobs: one hand turns off a leaky faucet (less fluid in), while the other opens the back door to let water out. Two fixes in one!"
   },
   orange: {
     name: "Carbonic Anhydrase Inhibitors",
@@ -101,8 +101,8 @@ const dropData = {
       "- Dorzolamide (Trusopt)",
       "- Brinzolamide (Azopt)"
     ],
-    mechanism: "Inhibit carbonic anhydrase in the ciliary epithelium, reducing bicarbonate formation and thus aqueous humor production.",
-    analogy: "Cuts power to a water pump without energy, the fluid stops being made. Or imagine a soda machine losing its gas cartridge - no fizz, no flow, the pressure drops and everything slows down!"
+    mechanism: "Slow down the eye’s fluid-making machine by blocking a key ingredient.",
+    analogy: "Imagine a soda machine running out of gas. No gas means no fizz—so less soda comes out. These drops cut the power to the machine, slowing everything down."
   },
   white: {
     name: "ROCK Inhibitors / White Cap Drops",
@@ -112,8 +112,8 @@ const dropData = {
       "- Simbrinza (Brimonidine + Brinzolamide)",
       "- Rocklatan (Netarsudil + Latanoprost)"
     ],
-    mechanism: "Inhibit Rho kinase to relax trabecular meshwork cells, increasing conventional outflow through Schlemm’s canal.",
-    analogy: "Clears the tree roots out of a pipe to restore flow. Or picture a traffic cop waving cars through a jammed intersection - the outflow route gets moving again!"
+    mechanism: "Relax part of the eye’s drainage system so fluid can escape more easily.",
+    analogy: "Picture a traffic jam where nothing moves. ROCK inhibitors are like a traffic cop stepping in—suddenly, the cars start flowing and the jam clears up!"
   },
   darkgreen: {
     name: "Miotics",
@@ -121,8 +121,8 @@ const dropData = {
     examples: [
       "- Pilocarpine"
     ],
-    mechanism: "Stimulate muscarinic receptors to constrict the pupil, tightening the ciliary muscle and opening the trabecular meshwork.",
-    analogy: "Pulls a string to pop open a stuck drain flap! Or like pulling the cord on a window blind to lift it up—opening a path for fresh air to flow out!."
+    mechanism: "Squeeze part of your eye open so fluid can drain better.",
+    analogy: "It’s like pulling a string to pop open a stuck drain. Now the water can finally leave the sink, and the pressure goes down!"
   },
   darkblue: {
     name: "Combo Drops",
@@ -132,13 +132,11 @@ const dropData = {
       "- Cosopt (Dorzolamide + Timolol)"
     ],
     mechanism: 
-      "Combigan combines Brimonidine, an alpha-2 agonist that decreases aqueous production and increases outflow,  with Timolol, a beta-blocker that suppresses aqueous production. " +
-      "Cosopt combines Dorzolamide, a carbonic anhydrase inhibitor that blocks fluid production enzymatically, with Timolol.",
+      "Use two medicines at once—one lowers how much fluid is made, the other helps drain or blocks fluid-making enzymes.",
     analogy: 
-      "A tag-team effort of one friend who turns off the water supply (Timolol) and and the other friend who either opens a backdoor drain (Brimonidine) or shuts down the factory (Dorzolamide). Or think of a heist movie: one disables the security system, while the other opens the escape tunnel."
+      "Imagine a buddy-cop movie. One cop shuts off the water supply, the other either opens a secret drain tunnel or cuts off power to the pump. Working together, they bring the pressure down fast."
   }
 };
-
 
 const learnMoreBtn = document.getElementById('learn-more-btn');
 const resultsSection = document.getElementById('results');
