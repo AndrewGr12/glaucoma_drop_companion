@@ -245,7 +245,7 @@ body.menu-open {
 /*Author's photo*/
 .author-photo {
   width:90%;
-  max-width: 400px; /* or 500px, adjust as desired */
+  max-width: 300px; /* or 500px, adjust as desired */
   height: auto;
   border-radius: 8px;
   object-fit: cover; /* or use 'contain' depending on the effect you want */
@@ -371,7 +371,7 @@ body.menu-open {
 
 .author-photo {
   width: 90%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   max-height: 100%;
   border-radius: 8px;
