@@ -4,6 +4,10 @@ html, body {
   padding: 0;
 }
 
+main {
+  flex: 1;
+}
+
 html {
   overflow-y: scroll;
 }
