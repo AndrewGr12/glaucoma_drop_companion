@@ -196,11 +196,14 @@ const dropData = {
       "- Rocklatan: Netarsudil 0.02% + Latanoprost 0.005%"
     ],
     howTheyWork: [
-      "Netarsudil (Rhopressa) relaxes the eye’s drainage pathway by softening the tissue, like loosening a stiff pipe so fluid can exit more easily!", 
-      "In Simbrinza, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while brinzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!", 
-      "In Rocklatan, netarsudil relaxes the eye’s drainage pathway by softening the tissue, like loosening a stiff pipe so fluid can exit more easily, while latanoprost helps your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!"
+      "- Netarsudil (Rhopressa) relaxes the eye’s drainage pathway by softening the tissue, like loosening a stiff pipe so fluid can exit more easily!",
+      "", 
+      "- In Simbrinza, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while brinzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!", 
+      "",
+      "- In Rocklatan, netarsudil relaxes the eye’s drainage pathway by softening the tissue, like loosening a stiff pipe so fluid can exit more easily, while latanoprost helps your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!"
     ]    
   },
+
   darkgreen: {
     name: "Miotics",
     color: "#008000",
@@ -219,7 +222,8 @@ const dropData = {
       "- Cosopt: Dorzolamide 2% + Timolol 0.5%"
     ],
     howTheyWork: [
-      "In Combigan, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while Timolol tells your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!",
+      "- In Combigan, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while Timolol tells your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!",
+      "",
       "In Cosopt, dorzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid, while Timolol tells your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!"
     ] 
   }
