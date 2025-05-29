@@ -104,7 +104,7 @@ const dropData = {
     analogy: "Imagine a soda machine running out of gas. No gas means no fizz - so less soda comes out! These drops cut the power to the machine, slowing everything down!"
   },
   white: {
-    name: "ROCK Inhibitors / White Cap Drops",
+    name: "ROCK Inhibitors or Combination Drops",
     color: "#FFFFFF",
     examples: [
       "- Netarsudil (Rhopressa)",
@@ -124,7 +124,7 @@ const dropData = {
     analogy: "It’s like pulling a string to pop open a stuck drain. Now the water can finally leave the sink, and the pressure goes down!"
   },
   darkblue: {
-    name: "Combo Drops",
+    name: "Combination Drops",
     color: "#000080",
     examples: [
       "- Combigan (Brimonidine + Timolol)",
