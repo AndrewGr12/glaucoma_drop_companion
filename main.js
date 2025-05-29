@@ -149,7 +149,7 @@ const dropData = {
       "- Carteolol (Ocupress)"
     ],
     howTheyWork: [
-    "Beta-blockers tell your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!"
+    "Beta-blockers help your eye make less fluid, like turning down a faucet so your eye doesn't overflow!"
     ]
   },
   teal: {
@@ -184,7 +184,7 @@ const dropData = {
       "- Brinzolamide (Azopt)"
     ],
     howTheyWork: [
-    "CAIs block an enzyme inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!"
+    "CAIs block a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!"
     ]
   },
   white: {
@@ -197,7 +197,7 @@ const dropData = {
     ],
     howTheyWork: [
       " Netarsudil (Rhopressa) relaxes the eye’s drainage pathway by softening the tissue, like loosening a stiff pipe so fluid can exit more easily!", 
-      "In Simbrinza, brimonidine has a double duty - it slow down how much fluid your eye makes and also help open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while brinzolamide block an enzyme inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!", 
+      "In Simbrinza, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while brinzolamide blocks an protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!", 
       "In Rocklatan, netarsudil relaxes the eye’s drainage pathway by softening the tissue, like loosening a stiff pipe so fluid can exit more easily, while latanoprost help your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!"
     ]    
     },
@@ -208,7 +208,7 @@ const dropData = {
       "- Pilocarpine"
     ],
     howTheyWork: [
-      "Miotics like Pilocarpine shrink your pupil and pull on parts of the eye to open the drain—like tugging on a stuck pipe so fluid can finally escape."
+      "Pilocarpine shrink your pupil and pull on parts of the eye to open the drain—like tugging on a stuck pipe so fluid can finally escape."
     ]
   },
   darkblue: {
@@ -219,8 +219,8 @@ const dropData = {
       "- Cosopt (Dorzolamide + Timolol)"
     ],
     howTheyWork: [
-      "In combigan, brimonidine has a double duty - it slow downs how much fluid your eye makes and also help open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while Timolol tell your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!",
-      "In cosopt, block an enzyme inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid, while Timolol tell your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!"
+      "In combigan, brimonidine has a double duty - it slows downs how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while Timolol tells your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!",
+      "In cosopt, dorzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid, while Timolol tell your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!"
     ] 
   }
 };
