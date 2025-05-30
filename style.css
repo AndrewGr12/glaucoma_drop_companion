@@ -23,6 +23,10 @@ h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+.selector h2 {
+  font-size: 18px;
+}
+
 header {
   position: fixed;
   top: 0;
