@@ -41,10 +41,28 @@ hamburger.addEventListener('click', () => {
   }
 });
 
+/*
 document.querySelectorAll('.color-choice').forEach(choice => {
   choice.addEventListener('click', () => {
     choice.classList.toggle('selected');
     choice.style.outline = choice.classList.contains('selected') ? '3px solid black' : 'none';
+  });
+});
+*/
+
+document.querySelectorAll('.color-choice').forEach(choice => {
+  choice.addEventListener('click', () => {
+    document.querySelectorAll('.color-choice').forEach(c => {
+      c.classList.remove('selected');
+      c.style.outline = 'none';
+      const prevLabel = c.parentElement.querySelector('p');
+      if (prevLabel) prevLabel.style.fontWeight = 'normal';
+    });
+
+    choice.classList.add('selected');
+    choice.style.outline = '3px solid black';
+    const label = choice.parentElement.querySelector('p');
+    if (label) label.style.fontWeight = 'bold';
   });
 });
 
@@ -156,6 +174,7 @@ const detailsPage = document.getElementById('details-page');
 const dropDetailsContainer = document.getElementById('drop-details-container');
 const backBtn = document.getElementById('back-btn');
 
+if (learnMoreBtn) {
 learnMoreBtn.addEventListener('click', () => {
   const selectedColors = Array.from(document.querySelectorAll('.color-choice.selected'))
     .map(el => el.getAttribute('data-color'));
@@ -181,6 +200,7 @@ learnMoreBtn.addEventListener('click', () => {
       dropDetailsContainer.appendChild(dropDiv);
     }
   });
+  
 
   document.querySelector('.selector').style.display = 'none';
   resultsSection.style.display = 'none';
@@ -189,7 +209,9 @@ learnMoreBtn.addEventListener('click', () => {
   detailsPage.classList.add('visible');
 });
 });
+}
 
+if (backBtn) {
 backBtn.addEventListener('click', () => {
   detailsPage.classList.remove('visible');
 setTimeout(() => {
@@ -197,6 +219,8 @@ setTimeout(() => {
 }, 600); // Match the CSS transition duration
   document.querySelector('.selector').style.display = 'block';
 });
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const backBtn = document.getElementById('back-btn');
@@ -205,7 +229,47 @@ document.addEventListener('DOMContentLoaded', () => {
   const dropDetailsContainer = document.getElementById('drop-details-container');
   const fadeElements = document.querySelectorAll('.fade-in-up');
   const colorChoices = document.querySelectorAll('.color-choice');
+  const singleDropDetailsContainer = document.getElementById('single-drop-details-container');
 
+colorChoices.forEach(choice => {
+  choice.addEventListener('click', () => {
+    // Remove previously selected styles
+    colorChoices.forEach(c => {
+      c.classList.remove('selected');
+      c.style.outline = 'none';
+      const prevLabel = c.parentElement.querySelector('p');
+      if (prevLabel) prevLabel.style.fontWeight = 'normal';
+    });
+
+    // Highlight current selection
+    choice.classList.add('selected');
+    choice.style.outline = '3px solid black';
+    const label = choice.parentElement.querySelector('p');
+    if (label) label.style.fontWeight = 'bold';
+
+    // Load corresponding data into container
+    const selectedColor = choice.getAttribute('data-color');
+    const data = dropData[selectedColor];
+
+    if (data) {
+      singleDropDetailsContainer.innerHTML = `
+        <div class="drop-row">
+          <div class="drop-box">
+            <div class="color-box" style="background-color: ${data.color};"></div>
+            <div class="drop-info">
+              <h3>${data.name}</h3>
+              <p><strong>Examples:</strong><br>${data.examples.join('<br>')}</p>
+              <p><strong>How they work:</strong><br>${data.howTheyWork.join('<br>')}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+  });
+});
+
+
+  if (backBtn) {
   backBtn.addEventListener('click', () => {
     // Immediately hide the details section
     detailsPage.style.display = 'none';
@@ -222,6 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add 'visible' class for fade-in
     mainContent.classList.add('visible');
   });
+  }
 
   fadeElements.forEach((el, index) => {
     setTimeout(() => {
@@ -237,5 +302,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
 
 
