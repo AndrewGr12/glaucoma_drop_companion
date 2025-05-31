@@ -102,9 +102,9 @@ const dropData = {
       "- Timolol maleate 0.25%"
     ],
     howTheyWork: [
-      "Prostaglandin analogs help your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!",
+      "- Prostaglandin analogs, which end in '-prost' help your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!",
       "",
-      "Timolol maleate is a beta-blocker, which helps your eye make less fluid, like turning down a faucet so your eye doesn't overflow!"
+      "- Timolol maleate is a beta-blocker, which helps your eye make less fluid, like turning down a faucet so your eye doesn't overflow!"
     ]
   },
   purple: {
@@ -174,7 +174,7 @@ const dropData = {
       "- Simbrinza: Brimonidine 0.2% + Brinzolamide 1%",
     ],
     howTheyWork: [
-      "- In Simbrinza, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while brinzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!",
+      "In Simbrinza, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while brinzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!",
     ] 
   }
 };
