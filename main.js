@@ -134,7 +134,6 @@ const dropData = {
     color: "#FFFFFF",
     examples: [
       "- Netarsudil 0.02% (Rhopressa)",
-      "- Simbrinza: Brimonidine 0.2% + Brinzolamide 1%",
       "- Rocklatan: Netarsudil 0.02% + Latanoprost 0.005%"
     ],
     howTheyWork: [
