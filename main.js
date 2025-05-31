@@ -136,9 +136,7 @@ const dropData = {
     ],
     howTheyWork: [
       "- Netarsudil (Rhopressa) relaxes the eye’s drainage pathway by softening the tissue, like loosening a stiff pipe so fluid can exit more easily!",
-      "", 
-      "- In Simbrinza, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while brinzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!", 
-      "",
+      "",  
       "- In Rocklatan, netarsudil relaxes the eye’s drainage pathway by softening the tissue, like loosening a stiff pipe so fluid can exit more easily, while latanoprost helps your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!"
     ]    
   },
@@ -164,6 +162,16 @@ const dropData = {
       "- In Combigan, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while Timolol tells your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!",
       "",
       "- In Cosopt, dorzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid, while Timolol tells your eye to make less fluid, like turning down a faucet so your eye doesn't overflow!"
+    ] 
+  },
+    limegreen: {
+    name: "Combination Drop",
+    color: "#000080",
+    examples: [
+      "- Simbrinza: Brimonidine 0.2% + Brinzolamide 1%",
+    ],
+    howTheyWork: [
+      "- In Simbrinza, brimonidine has a double duty - it slows down how much fluid your eye makes and also helps open the drain, like a janitor fixing a leaky faucet and a clogged sink at once, while brinzolamide blocks a protein inside your eye that helps make fluid, like cutting power to a machine so it stops producing extra liquid!",
     ] 
   }
 };
@@ -220,7 +228,6 @@ setTimeout(() => {
   document.querySelector('.selector').style.display = 'block';
 });
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const backBtn = document.getElementById('back-btn');
