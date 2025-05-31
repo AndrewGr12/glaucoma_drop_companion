@@ -166,7 +166,7 @@ const dropData = {
   },
     limegreen: {
     name: "Combination Drop",
-    color: "#000080",
+    color: "#B9FF66",
     examples: [
       "- Simbrinza: Brimonidine 0.2% + Brinzolamide 1%",
     ],
