@@ -83,7 +83,7 @@ const dropData = {
     name: "Beta-blockers",
     color: "#FFFF00",
     examples: [
-      "- Timolol 0.25% or 0.5% (Timoptic, Istalol, Betimol)",
+      "- Timolol 0.5% (Timoptic, Istalol, Betimol)",
       "- Levobunolol 0.25% or 0.5% (Betagan)",
       "- Carteolol 1% (Ocupress)"
     ],
@@ -91,15 +91,24 @@ const dropData = {
       "Beta-blockers help your eye make less fluid, like turning down a faucet so your eye doesn't overflow!"
     ]
   },
+  lightblue: {
+    name: "Beta-blockers",
+    color: "#90D5FF",
+    examples: [
+      "Timolol maleate 0.25%"
+    ],
+    howTheyWork: [
+      "Timolol maleate, a beta-blocker, helps your eye make less fluid, like turning down a faucet so your eye doesn't overflow!"
+    ]
+  },
   teal: {
-    name: "Prostaglandin Analogs or Beta Blockers",
+    name: "Prostaglandin Analogs",
     color: "#40E0D0",
     examples: [
       "- Latanoprost 0.005% (Xalatan, Xelpros)",
       "- Travoprost 0.004% (Travatan Z)",
       "- Bimatoprost 0.01% or 0.03% (Lumigan)",
-      "- Tafluprost 0.0015% (Zioptan)",
-      "- Timolol maleate 0.25%"
+      "- Tafluprost 0.0015% (Zioptan)"
     ],
     howTheyWork: [
       "- Prostaglandin analogs, which end in '-prost', help your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!",
