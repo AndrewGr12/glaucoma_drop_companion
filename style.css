@@ -389,7 +389,7 @@ body.menu-open {
 /* Side-by-side layout on wide screens */
 @media (min-width: 768px) {
   .color-selectors {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     max-width: none;
     gap: 12px;
   }
@@ -472,15 +472,30 @@ body.menu-open {
 /* iPhone-specific layout: 4 on top, 3 on bottom */
 @media (max-width: 430px) {
   .color-selectors {
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 0.5rem;
+  }
+
+  .color-choice:nth-child(1),
+  .color-choice:nth-child(2),
+  .color-choice:nth-child(3) {
+    grid-row: 1;
+  }
+
+  .color-choice:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .color-choice:nth-child(5),
   .color-choice:nth-child(6),
   .color-choice:nth-child(7) {
-    grid-column: span 1;
+    grid-row: 3;
   }
 }
+
 
 #main-content {
   opacity: 0;
