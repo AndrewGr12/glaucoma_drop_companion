@@ -92,16 +92,19 @@ const dropData = {
     ]
   },
   teal: {
-    name: "Prostaglandin Analogs",
+    name: "Prostaglandin Analogs or Beta Blockers",
     color: "#40E0D0",
     examples: [
       "- Latanoprost 0.005% (Xalatan, Xelpros)",
       "- Travoprost 0.004% (Travatan Z)",
       "- Bimatoprost 0.01% or 0.03% (Lumigan)",
-      "- Tafluprost 0.0015% (Zioptan)"
+      "- Tafluprost 0.0015% (Zioptan)",
+      "- Timolol maleate 0.25%"
     ],
     howTheyWork: [
-      "Prostaglandin analogs help your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!"
+      "Prostaglandin analogs help your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!",
+      "",
+      "Timolol maleate is a beta-blocker, which helps your eye make less fluid, like turning down a faucet so your eye doesn't overflow!"
     ]
   },
   purple: {
