@@ -333,7 +333,7 @@ body.menu-open {
   gap: 20px;
   margin-top: 60px; 
   padding-top: 0px; /* ✅ No padding pushing it down */
-  margin-bottom: -40px;
+  margin-bottom: -80px;
 }
 
 .about-container li {
