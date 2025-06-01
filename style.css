@@ -136,6 +136,7 @@ header {
   display: inline-block;
   margin: 1rem auto;
   text-align: center;
+  cursor: pointer;
 }
 
 .bottom-link:active {
@@ -163,7 +164,7 @@ header {
   display: inline-block;
   margin: 1rem auto;
   text-align: center;
-  margin-top: -200px;
+  cursor: pointer;
 }
 
 .bottom-link-home:active {
@@ -199,6 +200,7 @@ header {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  margin-bottom: -50px;
 }
 
 .details {
