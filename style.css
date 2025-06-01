@@ -178,6 +178,38 @@ header {
   background-color: #f0f0f0;
 }
 
+.close-btn {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Star rating system */
+.rating-stars {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rating-stars span {
+  color: lightgray;
+}
+
+.rating-stars .selected {
+  color: gold;
+}
+
+.star {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.star.selected {
+  color: gold;
+}
+
+
+
 /* Initial hidden state with opacity and translate */
 .fade-in-up {
   opacity: 0;
