@@ -111,9 +111,7 @@ const dropData = {
       "- Tafluprost 0.0015% (Zioptan)"
     ],
     howTheyWork: [
-      "- Prostaglandin analogs, which end in '-prost', help your eye drain fluid better, like adding big new gutters during a rainstorm to prevent flooding!",
-      "",
-      "- Timolol maleate is a beta-blocker, which helps your eye make less fluid, like turning down a faucet so your eye doesn't overflow!"
+      "Prostaglandin analogs, which end in '-prost', help your eye drain fluid better, like adding big new gutters during a rainstorm to prevent"
     ]
   },
   purple: {
